@@ -28,8 +28,13 @@
   </style>
 </head>
 <body>
-  <h1>Electron Auto Update Example new version 1.0.2</h1>
+  <h1>Electron Auto Update Example new version 1.0.3</h1>
   <p id="version"></p>
+
+  <button id="testing" onClick="newapp()" class="">
+      test
+    </button>
+
   <div id="notification" class="hidden">
     <p id="message"></p>
     <button id="close-button" onClick="closeNotification()">
@@ -69,6 +74,10 @@
     }
     function restartApp() {
       ipcRenderer.send('restart_app');
+    }
+
+    function newapp() {
+      ipcRenderer.send('newapp');
     }
 
   </script>
