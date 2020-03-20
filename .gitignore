@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 /electron-builder.yml
 /node_modules
 /dist
+=======
+/electron-builder.yml
+/node_modules
+/dist
+>>>>>>> 99efd20810f73bb352e39aeafe3ffdc127f2d24f
