@@ -4,7 +4,9 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder build --win --publish never",
+    "deploy": "electron-builder build --win --publish always"
   },
   "repository": {
 	  "type" : "git",
@@ -18,7 +20,5 @@
   },
   "dependencies": {
     "electron-updater": "^4.2.5"
-  },
-  "build": "electron-builder build --win --publish never",
-  "deploy": "electron-builder build --win --publish always"
+  }  
 }
