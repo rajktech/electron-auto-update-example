@@ -8,7 +8,7 @@
   },
   "repository": {
 	  "type" : "git",
-	  "url" : "https://github.com/[YOUR USERNAME]/[YOUR REPO NAME].git"
+	  "url" : "https://github.com/raj123/electron-auto-update-example.git"
 	},
   "author": "",
   "license": "ISC",
@@ -18,5 +18,7 @@
   },
   "dependencies": {
     "electron-updater": "^4.2.5"
-  }
+  },
+  "build": "electron-builder build --win --publish never",
+  "deploy": "electron-builder build --win --publish always"
 }
